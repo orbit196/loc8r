@@ -1,13 +1,13 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
 
-// Connection 1: Local database - working
-// var dbURI = 'mongodb://localhost/Loc8r';
+// Connection 1: Local database - working!
+var dbURI = 'mongodb://localhost/Loc8r';
 
-// Connection 2: Remote hosted database - ?
-if (process.env.NODE_ENV == 'production') {
-	dbURI = 'mongodb://orbit196:Upfront107@ds137763.mlab.com:37763/heroku_bwwxgnwq'
-}
+// Connection 2: Remote hosted database - working!
+// if (process.env.NODE_ENV == 'production') {
+// 	dbURI = 'mongodb://orbit196:Upfront107@ds137763.mlab.com:37763/heroku_bwwxgnwq'
+// }
 
 // Connection information
 mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true});

@@ -1,2 +1,4 @@
 Q: How do I solve the error " [nodemon] app crashed - waiting for file changes before starting."
 A: Use “ps -eaf | grep node” to get the node process and kill the PID by “kill -9 process_id”
+Q: 
+A:
